@@ -1,0 +1,828 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+// Custom code goes here..
+
+
+// Examples of using the icon mixin:
+// @include icon('user');
+
+@include icon-font('icomoonIcons', inline-font-files(
+'icomoon/icomoon.woff', woff, 
+'icomoon/icomoon.ttf', truetype, 
+'icomoon/icomoon.svg', svg
+));
+
+@include icon("ico_home" ,				"\e000", "icomoonIcons"); 
+@include icon("ico_droplet",			"\e001", "icomoonIcons"); 
+@include icon("ico_image" ,				"\e002", "icomoonIcons");
+@include icon("ico_image_2" ,			"\e003", "icomoonIcons");
+@include icon("ico_paint" ,				"\e004", "icomoonIcons");
+@include icon("ico_camera" ,			"\e005", "icomoonIcons");
+@include icon("ico_music" ,				"\e006", "icomoonIcons");
+@include icon("ico_headphones" ,		"\e007", "icomoonIcons");
+@include icon("ico_play" ,				"\e008", "icomoonIcons");
+@include icon("ico_film" ,				"\e009", "icomoonIcons");
+@include icon("ico_camera_2" ,			"\e00a", "icomoonIcons");
+@include icon("ico_pacman" ,			"\e00b", "icomoonIcons");
+@include icon("ico_bullhorn" ,			"\e00c", "icomoonIcons");
+@include icon("ico_connection" ,		"\e00d", "icomoonIcons");
+@include icon("ico_feed" ,				"\e00e", "icomoonIcons");
+@include icon("ico_podcast" ,			"\e00f", "icomoonIcons");
+@include icon("ico_book" ,				"\e010", "icomoonIcons");
+@include icon("ico_library" ,			"\e011", "icomoonIcons");
+@include icon("ico_barcode" ,			"\e012", "icomoonIcons");
+@include icon("ico_grcode" ,			"\e013", "icomoonIcons");
+@include icon("ico_ticket" ,			"\e014", "icomoonIcons");
+@include icon("ico_cart" ,				"\e015", "icomoonIcons");
+@include icon("ico_coin" ,				"\e016", "icomoonIcons");
+@include icon("ico_credit" ,			"\e017", "icomoonIcons");
+@include icon("ico_support" ,			"\e018", "icomoonIcons");
+@include icon("ico_phone" ,				"\e019", "icomoonIcons");
+@include icon("ico_phone_hang_up" ,		"\e01a", "icomoonIcons");
+@include icon("ico_notebook" ,			"\e01b", "icomoonIcons");
+@include icon("ico_envelop" ,			"\e01c", "icomoonIcons");
+@include icon("ico_location" ,			"\e01d", "icomoonIcons");
+@include icon("ico_location_2" ,		"\e01e", "icomoonIcons");
+@include icon("ico_compass" ,			"\e01f", "icomoonIcons");
+@include icon("ico_history" ,			"\e020", "icomoonIcons");
+@include icon("ico_clock" ,				"\e021", "icomoonIcons");
+@include icon("ico_alarm" ,				"\e022", "icomoonIcons");
+@include icon("ico_bell" ,				"\e023", "icomoonIcons");
+@include icon("ico_stopwatch" ,			"\e024", "icomoonIcons");
+@include icon("ico_calendar" ,			"\e025", "icomoonIcons");
+@include icon("ico_print" ,				"\e026", "icomoonIcons");
+@include icon("ico_keyboard" ,			"\e027", "icomoonIcons");
+@include icon("ico_mobile" ,			"\e028", "icomoonIcons");
+@include icon("ico_mobile_2" ,			"\e029", "icomoonIcons");
+@include icon("ico_tablet" ,			"\e02a", "icomoonIcons");
+@include icon("ico_tv" ,				"\e02b", "icomoonIcons");
+@include icon("ico_cabinet" ,			"\e02c", "icomoonIcons");
+@include icon("ico_box_add" ,			"\e02d", "icomoonIcons");
+@include icon("ico_box_remove" ,		"\e02e", "icomoonIcons");
+@include icon("ico_download" ,			"\e02f", "icomoonIcons");
+
+@include icon("ico_upload" ,			"\e030", "icomoonIcons");
+@include icon("ico_disk" ,				"\e031", "icomoonIcons");
+@include icon("ico_undo" ,				"\e032", "icomoonIcons");
+@include icon("ico_redo" ,				"\e033", "icomoonIcons");
+@include icon("ico_undo_2" ,			"\e034", "icomoonIcons");
+@include icon("ico_redo_2" ,			"\e035", "icomoonIcons");
+@include icon("ico_forward" ,			"\e036", "icomoonIcons");
+@include icon("ico_reply" ,				"\e037", "icomoonIcons");
+@include icon("ico_bubble" ,			"\e038", "icomoonIcons");
+@include icon("ico_bubble_2" ,			"\e039", "icomoonIcons");
+@include icon("ico_user" ,				"\e03a", "icomoonIcons");
+@include icon("ico_users" ,				"\e03b", "icomoonIcons");
+@include icon("ico_user_2" ,			"\e03c", "icomoonIcons");
+@include icon("ico_spinner" ,			"\e03d", "icomoonIcons");
+@include icon("ico_spinner_2" ,			"\e03e", "icomoonIcons");
+@include icon("ico_spinner_3" ,			"\e03f", "icomoonIcons");
+
+@include icon("ico_spinner_4" ,			"\e040", "icomoonIcons");
+@include icon("ico_spinner_5" ,			"\e041", "icomoonIcons");
+@include icon("ico_binoculars" ,		"\e042", "icomoonIcons");
+@include icon("ico_search" ,			"\e043", "icomoonIcons");
+@include icon("ico_zoom_in" ,			"\e044", "icomoonIcons");
+@include icon("ico_zoom_out" ,			"\e045", "icomoonIcons");
+@include icon("ico_expand" ,			"\e046", "icomoonIcons");
+@include icon("ico_contract" ,			"\e047", "icomoonIcons");
+@include icon("ico_expand_2" ,			"\e048", "icomoonIcons");
+@include icon("ico_contract_2" ,		"\e049", "icomoonIcons");
+@include icon("ico_key" ,				"\e04a", "icomoonIcons");
+@include icon("ico_lock" ,				"\e04b", "icomoonIcons");
+@include icon("ico_unlocked" ,			"\e04c", "icomoonIcons");
+@include icon("ico_wrench" ,			"\e04d", "icomoonIcons");
+@include icon("ico_settings" ,			"\e04e", "icomoonIcons");
+@include icon("ico_equalizer" ,			"\e04f", "icomoonIcons");
+
+@include icon("ico_cog" ,				"\e050", "icomoonIcons");
+@include icon("ico_cogs" ,				"\e051", "icomoonIcons");
+@include icon("ico_cog_2" ,				"\e052", "icomoonIcons");
+@include icon("ico_wand" ,				"\e053", "icomoonIcons");
+@include icon("ico_bug" ,				"\e054", "icomoonIcons");
+@include icon("ico_gift" ,				"\e055", "icomoonIcons");
+@include icon("ico_trophy" ,			"\e056", "icomoonIcons");
+@include icon("ico_mug" ,				"\e057", "icomoonIcons");
+@include icon("ico_rocket" ,			"\e058", "icomoonIcons");
+@include icon("ico_meter2" ,			"\e059", "icomoonIcons");
+@include icon("ico_dashboard" ,			"\e05a", "icomoonIcons");
+@include icon("ico_fire" ,				"\e05b", "icomoonIcons");
+@include icon("ico_remove" ,			"\e05c", "icomoonIcons");
+@include icon("ico_target" ,			"\e05d", "icomoonIcons");
+@include icon("ico_shield" ,			"\e05e", "icomoonIcons");
+@include icon("ico_lightning" ,			"\e05f", "icomoonIcons");
+
+@include icon("ico_switch" ,			"\e060", "icomoonIcons");
+@include icon("ico_list" ,				"\e061", "icomoonIcons");
+@include icon("ico_tree" ,				"\e062", "icomoonIcons");
+@include icon("ico_cloud" ,				"\e063", "icomoonIcons");
+@include icon("ico_cloud_download" ,	"\e064", "icomoonIcons");
+@include icon("ico_cloud_upload" ,		"\e065", "icomoonIcons");
+@include icon("ico_globe" ,				"\e066", "icomoonIcons");
+@include icon("ico_earth" ,				"\e067", "icomoonIcons");
+@include icon("ico_link" ,				"\e068", "icomoonIcons");
+@include icon("ico_attachment" ,		"\e069", "icomoonIcons");
+@include icon("ico_eye_blocked" ,		"\e06a", "icomoonIcons");
+@include icon("ico_eye" ,				"\e06b", "icomoonIcons");
+@include icon("ico_brightness_med" ,	"\e06c", "icomoonIcons");
+@include icon("ico_brightness_contrast","\e06d", "icomoonIcons");
+@include icon("ico_star" ,				"\e06e", "icomoonIcons");
+@include icon("ico_star_2" ,			"\e06f", "icomoonIcons");
+
+@include icon("ico_star_3" ,			"\e070", "icomoonIcons");
+@include icon("ico_heart" ,				"\e071", "icomoonIcons");
+@include icon("ico_heart_2" ,			"\e072", "icomoonIcons");
+@include icon("ico_thumbs_up" ,			"\e073", "icomoonIcons");
+@include icon("ico_thumbs_up_2" ,		"\e074", "icomoonIcons");
+@include icon("ico_point_right" ,		"\e075", "icomoonIcons");
+@include icon("ico_point_left" ,		"\e076", "icomoonIcons");
+@include icon("ico_point_down" ,		"\e077", "icomoonIcons");
+@include icon("ico_point_up" ,			"\e078", "icomoonIcons");
+@include icon("ico_warning" ,			"\e079", "icomoonIcons");
+@include icon("ico_notification" ,		"\e07a", "icomoonIcons");
+@include icon("ico_info" ,				"\e07b", "icomoonIcons");
+@include icon("ico_info_2" ,			"\e07c", "icomoonIcons");
+@include icon("ico_question" ,			"\e07d", "icomoonIcons");
+@include icon("ico_blocked" ,			"\e07e", "icomoonIcons");
+@include icon("ico_cancel_circle" ,		"\e07f", "icomoonIcons");
+
+@include icon("ico_checkmark_circle" ,	"\e080", "icomoonIcons");
+@include icon("ico_spam" ,				"\e081", "icomoonIcons");
+@include icon("ico_close" ,				"\e082", "icomoonIcons");
+@include icon("ico_checkmark" ,			"\e083", "icomoonIcons");
+@include icon("ico_minus" ,				"\e084", "icomoonIcons");
+@include icon("ico_plus" ,				"\e085", "icomoonIcons");
+@include icon("ico_exit" ,				"\e086", "icomoonIcons");
+@include icon("ico_enter" ,				"\e087", "icomoonIcons");
+@include icon("ico_play_2" ,			"\e088", "icomoonIcons");
+@include icon("ico_pause" ,				"\e089", "icomoonIcons");
+@include icon("ico_stop" ,				"\e08a", "icomoonIcons");
+@include icon("ico_backward" ,			"\e08b", "icomoonIcons");
+@include icon("ico_forward_2" ,			"\e08c", "icomoonIcons");
+@include icon("ico_play_3" ,			"\e08d", "icomoonIcons");
+@include icon("ico_pause_2" ,			"\e08e", "icomoonIcons");
+@include icon("ico_stop_2" ,			"\e08f", "icomoonIcons");
+
+@include icon("ico_backward_2" ,		"\e090", "icomoonIcons");
+@include icon("ico_forward_3" ,			"\e091", "icomoonIcons");
+@include icon("ico_first" ,				"\e092", "icomoonIcons");
+@include icon("ico_last" ,				"\e093", "icomoonIcons");
+@include icon("ico_previous" ,			"\e094", "icomoonIcons");
+@include icon("ico_next" ,				"\e095", "icomoonIcons");
+@include icon("ico_eject" ,				"\e096", "icomoonIcons");
+@include icon("ico_volume_high" ,		"\e097", "icomoonIcons");
+@include icon("ico_volume_med" ,		"\e098", "icomoonIcons");
+@include icon("ico_volume_low" ,		"\e099", "icomoonIcons");
+@include icon("ico_volume_mute" ,		"\e09a", "icomoonIcons");
+@include icon("ico_volume_mute_2" ,		"\e09b", "icomoonIcons");
+@include icon("ico_increase" ,			"\e09c", "icomoonIcons");
+@include icon("ico_volume_decrease" ,	"\e09d", "icomoonIcons");
+@include icon("ico_loop" ,				"\e09e", "icomoonIcons");
+@include icon("ico_loop_2" ,			"\e09f", "icomoonIcons");
+
+@include icon("ico_loop_3" ,			"\e0a0", "icomoonIcons");
+@include icon("ico_shuffle" ,			"\e0a1", "icomoonIcons");
+@include icon("ico_arrow_up_left" ,		"\e0a2", "icomoonIcons");
+@include icon("ico_arrow_up" ,			"\e0a3", "icomoonIcons");
+@include icon("ico_arrow_up_right" ,	"\e0a4", "icomoonIcons");
+@include icon("ico_arrow_right" ,		"\e0a5", "icomoonIcons");
+@include icon("ico_arrow_down_right" ,	"\e0a6", "icomoonIcons");
+@include icon("ico_arrow_down" ,		"\e0a7", "icomoonIcons");
+@include icon("ico_arrow_down_left" ,	"\e0a8", "icomoonIcons");
+@include icon("ico_arrow_left" ,		"\e0a9", "icomoonIcons");
+@include icon("ico_arrow_up_left" ,		"\e0aa", "icomoonIcons");
+@include icon("ico_arrow_up_2" ,		"\e0ab", "icomoonIcons");
+@include icon("ico_arrow_up_right_2" ,	"\e0ac", "icomoonIcons");
+@include icon("ico_arrow_right_2" ,		"\e0ad", "icomoonIcons");
+@include icon("ico_arrow_down_right_2" ,"\e0ae", "icomoonIcons");
+@include icon("ico_arrow_down_2" ,		"\e0af", "icomoonIcons");
+
+@include icon("ico_arrow_down_left_2" ,	"\e0b0", "icomoonIcons");
+@include icon("ico_arrow_left_2" ,		"\e0b1", "icomoonIcons");
+@include icon("ico_arrow_up_left_3" ,	"\e0b2", "icomoonIcons");
+@include icon("ico_arrow_up_3" ,		"\e0b3", "icomoonIcons");
+@include icon("ico_arrow_up_right_3" ,	"\e0b4", "icomoonIcons");
+@include icon("ico_arrow_right_3" ,		"\e0b5", "icomoonIcons");
+@include icon("ico_arrow_down_right_3" ,"\e0b6", "icomoonIcons");
+@include icon("ico_arrow_down_3" ,		"\e0b7", "icomoonIcons");
+@include icon("ico_arrow_down_left_3" ,	"\e0b8", "icomoonIcons");
+@include icon("ico_arrow_left_3" ,		"\e0b9", "icomoonIcons");
+@include icon("ico_tab" ,				"\e0ba", "icomoonIcons");
+@include icon("ico_checkbox_checked" ,	"\e0bb", "icomoonIcons");
+@include icon("ico_checkbox_unchecked" ,"\e0bc", "icomoonIcons");
+@include icon("ico_radio_checked" ,		"\e0bd", "icomoonIcons");
+@include icon("ico_radio_unchecked" ,	"\e0be", "icomoonIcons");
+@include icon("ico_scissors" ,			"\e0bf", "icomoonIcons");
+
+@include icon("ico_table" ,				"\e0c0", "icomoonIcons");
+@include icon("ico_new_tab" ,			"\e0c1", "icomoonIcons");
+@include icon("ico_console" ,			"\e0c2", "icomoonIcons");
+@include icon("ico_mail" ,				"\e0c3", "icomoonIcons");
+@include icon("ico_mail_2" ,			"\e0c4", "icomoonIcons");
+@include icon("ico_mail_3" ,			"\e0c5", "icomoonIcons");
+@include icon("ico_mail_4" ,			"\e0c6", "icomoonIcons");
+@include icon("ico_google_plus" ,		"\e0c7", "icomoonIcons");
+@include icon("ico_google_drive" ,		"\e0c8", "icomoonIcons");
+@include icon("ico_feed_2" ,			"\e0c9", "icomoonIcons");
+@include icon("ico_feed_3" ,			"\e0ca", "icomoonIcons");
+@include icon("ico_feed_4" ,			"\e0cb", "icomoonIcons");
+@include icon("ico_flickr" ,			"\e0cc", "icomoonIcons");
+@include icon("ico_flickr_2" ,			"\e0cd", "icomoonIcons");
+@include icon("ico_ficckr_3" ,			"\e0ce", "icomoonIcons");
+@include icon("ico_flickr_4" ,			"\e0cf", "icomoonIcons");
+
+@include icon("ico_tux" ,				"\e0d0", "icomoonIcons");
+@include icon("ico_apple" ,				"\e0d1", "icomoonIcons");
+@include icon("ico_finder" ,			"\e0d2", "icomoonIcons");
+@include icon("ico_android" ,			"\e0d3", "icomoonIcons");
+@include icon("ico_windows" ,			"\e0d4", "icomoonIcons");
+@include icon("ico_youtube" ,			"\e0d5", "icomoonIcons");
+@include icon("ico_youtube_2" ,			"\e0d6", "icomoonIcons");
+@include icon("ico_remove_2" ,			"\e0d7", "icomoonIcons");
+@include icon("ico_flag" ,				"\e0d8", "icomoonIcons");
+@include icon("ico_bookmark" ,			"\e0d9", "icomoonIcons");
+@include icon("ico_warning_2" ,			"\e0da", "icomoonIcons");
+
+.semi-trans {
+	opacity : 0.8;
+}
+
+.showInfo {
+
+    background: #fff;
+
+    .avatar {
+        background-position: left center;
+        background-repeat: no-repeat;
+        border-width: 0 1px 1px 0;
+        border: 0;
+		width: auto;
+		height: 100px;	
+    }
+}
+
+.x-list-item.castListInfo {
+    font-size: 0.5em;
+	height: 100px;
+}
+
+.x-list-item.listInfo {
+
+    font-size: 0.9em;
+//    line-height: 1.1em;
+
+    .playIndex {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+    .playRemove {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+	.playEntry {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+//		padding-left: 50px;
+		padding-right: 5em;
+    }
+	.playlistEntry {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 10;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+		padding-right: 32px;
+    }
+	.watchedEntry {
+        background-position: top top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 24px 16px;
+//		padding-left: 50px;
+		padding-right: 5em;
+    }
+
+    .albumInfo {
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 85px;
+        height: 85px;
+        background-size: 87px auto;
+    }
+    .artistInfo {
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 85px;
+        height: 85px;
+        background-size: 87px auto;
+    }
+    .movieInfo {
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 85px;
+        height: 120px;
+        background-size: 87px auto;
+    }
+    h3 {
+		color:white;
+        font-weight: bold;
+        margin-left: 100px;
+		font-size: large;
+
+		.alignleft {
+			float: left;
+		}
+
+		.alignRight {
+			float: right;
+			margin-right: 60px;
+		}
+    }
+    h4 {
+        color: #999;
+        margin-left: 100px;
+//		margin-top: 50px;
+		.alignleft {
+			float: left;
+		}
+
+		.alignRight {
+			float: right;
+			margin-right: 60px;
+		}
+    }
+}
+
+
+
+.x-list-item.movieListInfo {
+
+    font-size: 0.9em;
+//	min-height: 120px;
+//	line-height: 80px;
+
+    .playIndex {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+    .playRemove {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+	.playEntry {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+//		padding-left: 50px;
+		padding-right: 5em;
+    }
+	.playlistEntry {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 10;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+		padding-right: 32px;
+    }
+    .movieInfo {
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 90px;
+        height: 120px;
+        background-size: 130px auto;
+		line-height: 120px;
+    }
+    h3 {
+		color:white;
+        font-weight: bold;
+        margin-left: 100px;
+		font-size: large;
+		height: 80px;
+		.alignleft {
+			float: left;
+		}
+
+		.alignRight {
+			float: right;
+			margin-right: 60px;
+		}
+    }
+    h4 {
+        color: #999;
+        margin-left: 100px;
+//		margin-top: 50px;
+		height: 10px;
+		.alignleft {
+			float: left;
+		}
+
+		.alignRight {
+			float: right;
+			margin-right: 60px;
+		}
+    }
+}
+
+.x-dataview-item.movieListInfo {
+
+//	min-height: 200px;
+//	line-height: 80px;
+
+    .movieInfo {
+//        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+//        float: left;
+        border: 0;
+        width: 150px;
+        height: 200px;
+        background-size: 120px auto;
+//		line-height: 120px;
+    }
+    h3 {
+		font-size: 0.8em;
+		color:white;
+        font-weight: bold;
+//		height: 80px;
+		width: 120px;
+    }
+}
+
+
+.x-list-item.localListInfo {
+
+    font-size: 0.7em;
+//    line-height: 1.1em;
+
+    .playIndex {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+    .playRemove {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 0;
+        width: 24px;
+        height: 24px;
+        background-size: 24px 24px;
+    }
+	.playEntry {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+//		padding-left: 50px;
+		padding-right: 5em;
+    }
+	.playlistEntry {
+        background-position: center top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 10;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+		padding-right: 32px;
+    }
+	.watchedEntry {
+        background-position: top top;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: right;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        background-size: 24px 16px;
+//		padding-left: 50px;
+		padding-right: 5em;
+    }
+
+    .albumInfo {
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 85px;
+        height: 85px;
+        background-size: 87px auto;
+    }
+    .artistInfo {
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 85px;
+        height: 85px;
+        background-size: 87px auto;
+    }
+    .movieInfo {
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        width: 85px;
+        height: 120px;
+        background-size: 87px auto;
+    }
+    h3 {
+		color:white;
+        font-weight: bold;
+        margin-left: 10px;
+		font-size: medium;
+
+		.alignleft {
+			float: left;
+		}
+
+		.alignRight {
+			float: right;
+			margin-right: 60px;
+		}
+    }
+    h4 {
+        color: #999;
+        margin-left: 100px;
+//		margin-top: 50px;
+		.alignleft {
+			float: left;
+		}
+
+		.alignRight {
+			float: right;
+			margin-right: 60px;
+		}
+    }
+}
+
+
+.x-popup-menu {
+	box-shadow: 0 0 0.5em;
+	border-radius: 0.3em;
+	color: $list-color;
+	background: $list-bg-color;
+}
+.x-popup-menu .x-anchor.x-anchor-left,
+.x-popup-menu .x-anchor.x-anchor-right,
+.x-popup-menu .x-anchor.x-anchor-top,
+.x-popup-menu .x-anchor.x-anchor-bottom {
+	background: $list-bg-color;
+}
+.x-popup-menu .x-button-label {
+	text-align: left;
+}
+
+.bc-tenant label {
+    font-weight: bold;
+}
+
+.x-list .x-list-disclosure:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '&';
+  font-family: 'Pictos';
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 35px;
+  text-shadow: 0 0 0;
+}
+
+@include sencha-tabbar-ui('tabcolour', #333333,'glossy',#0088CC);
+@include sencha-toolbar-ui('charcoal', #333333, 'glossy');
+
+@include sencha-button-ui('buttonCharcoal', #333333, 'glossy');
+
+
+
+// .x-toggle {border:none;height:1.7em}
+// .x-thumb {height:1.7em;width:1.7em}
+// .x-toggle .x-thumb::before {left:0;top:0;}
+// .x-thumb::before {background-image: -webkit-linear-gradient(white,#CDCDCD 2%,#fff);background-image: linear-gradient(white,#CDCDCD 2%,#fff);height:1.7em;width:1.7em}
+// .x-thumb:after {content: â€œâ€�;position: absolute;width: 1.43em;height: 1.43em;top: 0.135em;left: 0.135em;border: 1px solid #919191;-webkit-border-radius: 0.715em;border-radius: 0.715em;background-image: none;background-color: #dddddd;background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(3%, #eaeaea), color-stop(100%, #d0d0d0));background-image: -webkit-linear-gradient(top, #ffffff, #eaeaea 3%, #d0d0d0);background-image: linear-gradient(top, #ffffff, #eaeaea 3%, #d0d0d0);-webkit-background-clip: padding;background-clip: padding-box;}
+// .x-toggle-on,.x-toggle-off {background-size:100% 100%;}
+// .x-toggle-on {background-image:url('data:image/png;base64,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');}
+// .x-toggle-off {background-image:url('data:image/png;base64,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')}
+
+
+.no-white {
+    background: none;
+	color: white;
+}
+
+
+.x-indexbar > div {
+  font-size: 0.80em; // for instance
+  color: white;
+  body: 1.0em
+}
+
+.x-carousel-indicator-dark span.x-carousel-indicator-active{
+background-color: lighten(#5599FF,10);
+}
+.x-carousel-indicator-dark span{
+background-color: red;
+}
+
+
+// patch for ugly loadmask in ST 2.3
+.x-mask {
+	.x-mask-inner {
+		background: rgba(black, .4);
+		@include border-radius(.5em);
+	}
+	
+	.x-mask-message {
+		bottom: 1em;
+		color: white;
+	}
+	
+	&.x-has-message {
+		.x-loading-spinner-outer {
+			height: 6em;
+		}
+	}
+}
+
+
+
+.movieSelected-view {
+    background: #333333;
+    padding: 30px;
+//	opacity : 0.7;
+
+    .movieSelected-view-inner {
+        .description {
+            padding-left: 15px;
+
+            ul li {
+                list-style: disc outside none;
+                margin-left: 25px;
+            }
+        }
+
+        .name {
+            font-family: 'Quattrocento Sans', sans-serif;
+            line-height: 28px;
+            font-size: 20px;
+            font-weight: 700;
+            color:white;
+        }
+
+        .text {
+            font-size:14px;
+            color:white;
+            line-height: 20px;
+        }
+
+        .x-img {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
+.updateColor {
+    color: red;
+	background-color: #333333;
+}
+
+.notefield .x-form-label span {
+   font-size: 3em !important;
+//			background: rgba(0,255,255, 0.5); 
+	background-color: #333333;
+}
+
+.x-toolbar-light{
+    background-image:none;
+    background-color: #333333;
+}
+
+
+
+.nestedList-play {
+    font-size: 0.9em;
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 0.5em;
+    float: right;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+//		padding-left: 50px;
+	padding-right: 5em;
+}
+
+.nestedList-playList {
+    font-size: 0.9em;
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 0.5em;
+    float: right;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+	padding-right: 32px;
+}
+
+
+.nestedListStyle {
+    color: white;
+	background-color: #333333;
+}
+
+$list-color: #333333 !default;
+
+//mynestedList .x-list {
+//	background-color: #333333;
+//}
+
+//.x-nested-list {
+//	background-color: #333333 !important;
+//}
+
+.x-container.x-list-normal.x-list.x-layout-card-item.x-sized {
+	background-color: black !important;
+}
