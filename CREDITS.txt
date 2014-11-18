@@ -1,0 +1,14 @@
+
+                          THX to these Projects:
+
+--------------------------------------------------------------------------------
+
+XBMControl uses the JavaScript framework extjs. This project is 
+licensed under GPL v3 license.
+Have a look at
+	http://sencha.com
+
+Background:
+http://agsandrew.deviantart.com/
+--------------------------------------------------------------------------------
+
